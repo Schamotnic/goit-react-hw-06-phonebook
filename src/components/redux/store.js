@@ -10,7 +10,7 @@ import {
    PURGE,
    REGISTER,
  } from 'redux-persist';
- import storage from "redux-persist/lib/storage";
+ 
  
 
 
@@ -29,11 +29,7 @@ import {
     },
   });
   
- export const persistConfig = {
-    key: 'root',
-    storage,
-    whitelist:['items']
-   };
+ 
   export const persistor = persistStore(store)
   
    
